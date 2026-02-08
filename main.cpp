@@ -46,9 +46,11 @@ int main() {
             }
 
             double est = hll.estimate();
-            double ex = exactDistinct(prefix);
 
-            exact[i] = ex;
+            if (k == 0) {
+                exact[i] = exactDistinct(prefix);
+            }
+            
             mean[i] += est;
             sq_sum[i] += est * est;
         }
