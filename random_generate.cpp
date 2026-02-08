@@ -1,4 +1,4 @@
-#include "random_stream_gen.h"
+#include "random_generate.h"
 
 RandomStreamGen::RandomStreamGen(size_t streamSize, uint32_t seed) : rng(seed) {
     stream.reserve(streamSize);
